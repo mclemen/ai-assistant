@@ -1,7 +1,7 @@
 import speech_recognition as sr
 import pyttsx3
 import openai
-#import pyaudio
+
 
 openai.api_key = ""
 
