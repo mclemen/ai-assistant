@@ -10,9 +10,8 @@ jobs:
       - image: cimg/python:3.12.0
     steps:
       - checkout
-      - run: 
-        - name: Install dependencies
-        - command: pip install SpeechRecognitio openai pyttsx3
+      - python/install-packages:
+          pkg-manager: pip
       - run:
         - name: run test
         - command: python -m pytest
