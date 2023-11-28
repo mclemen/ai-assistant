@@ -12,10 +12,7 @@ jobs:
       - checkout
       - run: 
         - name: Install dependencies
-        - command: | 
-          pip install SpeechRecognition
-          pip install openai
-          pip install pyttsx3
+        - command: pip install SpeechRecognitio openai pyttsx3
       - run:
         - name: run test
         - command: python assistant.py
