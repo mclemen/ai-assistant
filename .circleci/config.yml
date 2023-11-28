@@ -15,4 +15,4 @@ jobs:
         - command: pip install SpeechRecognitio openai pyttsx3
       - run:
         - name: run test
-        - command: python assistant.py
+        - command: python -m pytest
